@@ -3,8 +3,8 @@ A set of Docker images to create a local Ethereum network with three nodes and a
 
 The testnet consists out of multiple parts :
 * 1 Bootnode - registers existing nodes on the network, discovery service.
-* 2 Miners - Also called **sealers** with proof-of-authority. They validate the blocks. No RPC is exposed as they are required to be unlocked.
-* 1 Node - This serves as **transaction relay** and is a fullnode that does not mine, is locked but has RPC exposed
+* 1 Miner - Also called **sealers** with proof-of-authority. They validate the blocks. No RPC is exposed as they are required to be unlocked.
+* 2 Nodes - This serves as **transaction relay** and is a fullnode that does not mine, is locked but has RPC exposed
 * 1 Blockchain explorer - Lightweight web application to explore the blockchain through web application. 
 
 ## Usage
@@ -19,7 +19,6 @@ There are three nodes that participate in the network. The state is synchronized
 The RPC Ports of the nodes are mapped to your localhost, the addresses are:
 
 * geth-dev-miner-1 : No RPC exposed
-* geth-dev-miner-2: No RPC exposed
 * geth-dev-node: [http://localhost:8545](http://localhost:8545)
 
 **The RPC port we have exposed to be accessed using Remix IDE is [http://localhost:8544](http://localhost:8544)**
